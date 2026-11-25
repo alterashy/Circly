@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' stroke='%2310B981' stroke-width='12' fill='none'/><circle cx='50' cy='50' r='18' fill='%2306D6A0'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circly — Thoughts in motion, connected in loops</title>
+    <meta name="description" content="A clean, fast, and minimalist micro-thread platform for thoughtful minds." />
+    <!-- Prevent Theme Flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('circly_theme_v1');
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Modern Typography: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#F4F8F6] dark:bg-[#0B110F] text-[#0B1612] dark:text-[#F2FBF7] antialiased selection:bg-emerald-500/20 selection:text-emerald-300 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
